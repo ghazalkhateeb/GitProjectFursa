@@ -3,6 +3,8 @@ from flask import Flask, send_file, request
 app = Flask(__name__)
 
 
+
+
 @app.route("/")
 def home():
     return "Welcome to my web server!"
@@ -16,6 +18,7 @@ def home():
 @app.route("/blog")
 def blog():
     return "Check out my latest blog post at example.com/blog."
+
 
 
 @app.route("/pricing")
